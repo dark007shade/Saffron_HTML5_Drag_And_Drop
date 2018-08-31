@@ -1,0 +1,207 @@
+/* -----------------------------------------
+            MAIN COLOR SCHEMES
+----------------------------------------- */
+
+/*
+
+ORANGE: #f58220;
+
+*/
+
+/* -----------------------------------------
+                GLOBAL STYLES
+----------------------------------------- */
+
+/* Prevent adjustments of font size after orientation change in IE on Windows phone and in IOS */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+
+/* Apply a natural box model to all elements */
+
+* {
+    font-family: 'Arial', sans-serif;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgba(241, 105, 121, 1);
+    color: rgba(0, 0, 0, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* -----------------------------------------
+            GLOBAL STYLES END
+----------------------------------------- */
+
+/* -----------------------------------------
+                LOCAL STYLES
+----------------------------------------- */
+main {
+    width: 100%;
+}
+
+.draganddrop_c {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.drag_box_c {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 5px 0;
+}
+
+.drag_box {
+    width: 100%;
+    cursor: move;
+    cursor: pointer;
+    color: black;
+    border: 1px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+
+i.fa-check {
+    color: green;
+}
+
+i.fa-times {
+    color: red;
+}
+
+.icon_triangle {
+    color: blue;
+}
+
+.icon_circle {
+    color: red;
+}
+
+.icon_square {
+    color: green;
+}
+
+.drag_box_icon {
+    background-color: white;
+    padding: 20px;
+    width: 25%;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.drag_box_text {
+    background-color: white;
+    padding: 20px;
+    width: 75%;
+}
+
+.drag_box_feedback {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    color: black;
+
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.button_c button {
+    cursor: pointer;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border: 0px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+    padding: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.button_c button:hover {
+    background-color: skyblue;
+}
+
+/* -----------------------------------------
+            LOCAL STYLES END
+----------------------------------------- */
+
+/* -----------------------------------------
+                MOBILE STYLES
+----------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .button_c button {
+        font-size: 16px;
+        width: 75%;
+    }
+
+    .drag_box_icon {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .button_c button {
+        width: 100%;
+    }
+}
+
+/* -----------------------------------------
+            MOBILE STYLES END
+----------------------------------------- */
